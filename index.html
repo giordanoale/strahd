@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Maledizione di Strahd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;700&family=Alegreya:ital,wght@0,400;0,600;1,400&family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+<style>
+/* Layout: one long chronicle, a sticky chapter rail, mist drifting behind the hero only. Single dark theme by choice: Barovia has no daylight. */
+:root {
+  --notte: #100e11;
+  --pietra: #1b181c;
+  --linea: #2f2a30;
+  --pergamena: #e7ddcb;
+  --nebbia: #9a919b;
+  --sangue: #b33a31;
+  --ok: #7fa278;
+  --ambra: #c9a058;
+  --display: "Cormorant Unicase", "Cormorant Garamond", Georgia, serif;
+  --body: "Alegreya", Georgia, "Times New Roman", serif;
+  --label: "Alegreya Sans SC", "Alegreya", Georgia, serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; background: var(--notte); color: var(--pergamena); font: 18px/1.6 var(--body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--sangue); outline-offset: 3px; }
+strong { color: #fff4e2; font-weight: 600; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 480px) { .wrap { padding: 0 16px; } body { font-size: 17px; } }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--linea); }
+.mist { position: absolute; inset: -20%; pointer-events: none; opacity: .55;
+  background:
+    radial-gradient(40% 30% at 20% 70%, rgba(154,145,155,.22), transparent 70%),
+    radial-gradient(35% 25% at 75% 40%, rgba(154,145,155,.16), transparent 70%),
+    radial-gradient(50% 35% at 50% 100%, rgba(179,58,49,.10), transparent 70%);
+  animation: drift 38s ease-in-out infinite alternate; }
+@keyframes drift { from { transform: translate3d(-4%, 0, 0); } to { transform: translate3d(4%, -3%, 0); } }
+@media (prefers-reduced-motion: reduce) { .mist { animation: none; } html { scroll-behavior: auto; } }
+.hero-in { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: end; padding: 72px 0 48px; }
+.eyebrow { font: 500 15px/1.2 var(--label); letter-spacing: .14em; color: var(--nebbia); margin: 0 0 12px; }
+h1 { font: 700 clamp(44px, 8vw, 92px)/.92 var(--display); margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+h1 span { color: var(--sangue); }
+.meta { margin: 20px 0 0; color: var(--nebbia); font-size: 16px; }
+.patto { border: 1px solid var(--sangue); background: linear-gradient(180deg, rgba(179,58,49,.14), rgba(179,58,49,.04)); padding: 20px 24px; min-width: 240px; max-width: 300px; }
+.patto .n { font: 700 72px/1 var(--display); color: var(--sangue); font-variant-numeric: tabular-nums; }
+.patto p { margin: 6px 0 0; font-size: 15px; line-height: 1.4; }
+.patto a { display: inline-block; margin-top: 12px; font: 500 14px var(--label); letter-spacing: .1em; color: var(--ambra); text-decoration: none; }
+.patto a:hover { text-decoration: underline; }
+@media (max-width: 760px) { .hero-in { grid-template-columns: 1fr; padding: 48px 0 32px; } .patto { max-width: none; } }
+
+/* Rail */
+nav { position: sticky; top: 0; z-index: 5; background: rgba(16,14,17,.92); backdrop-filter: blur(6px); border-bottom: 1px solid var(--linea); }
+nav ol { list-style: none; margin: 0 auto; padding: 0 24px; max-width: 1120px; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+nav a { display: block; padding: 14px 12px; white-space: nowrap; text-decoration: none; font: 500 15px var(--label); letter-spacing: .08em; color: var(--nebbia); border-bottom: 2px solid transparent; }
+nav a:hover, nav a.on { color: var(--pergamena); border-bottom-color: var(--sangue); }
+nav b { color: var(--sangue); font-weight: 500; margin-right: 6px; }
+
+/* Sections */
+section { padding: 64px 0; border-bottom: 1px solid var(--linea); }
+h2 { font: 700 clamp(32px, 5vw, 48px)/1 var(--display); margin: 0 0 8px; text-wrap: balance; }
+h2 small { display: block; font: 500 15px/1.4 var(--label); letter-spacing: .14em; color: var(--sangue); margin-bottom: 8px; }
+.lead { color: var(--nebbia); max-width: 62ch; margin: 0 0 32px; }
+h3 { font: 700 26px/1.15 var(--display); margin: 0 0 8px; }
+
+.capitoli { display: grid; gap: 32px; max-width: 68ch; }
+.capitolo p { margin: 0; }
+.capitolo h3 { display: flex; gap: 12px; align-items: baseline; }
+.capitolo h3 i { font: 500 15px var(--label); color: var(--sangue); font-style: normal; letter-spacing: .1em; min-width: 2.2em; }
+
+/* Momenti */
+.linea-tempo { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--linea); max-width: 860px; }
+.linea-tempo li { position: relative; display: grid; grid-template-columns: 150px 1fr; gap: 4px 24px; padding: 14px 0 14px 28px; }
+.linea-tempo li::before { content: ""; position: absolute; left: -5px; top: 22px; width: 9px; height: 9px; background: var(--notte); border: 1px solid var(--nebbia); transform: rotate(45deg); }
+.linea-tempo li.recente::before { background: var(--sangue); border-color: var(--sangue); }
+.quando { font: 500 15px/1.5 var(--label); letter-spacing: .08em; color: var(--nebbia); padding-top: 3px; }
+.momento { font-weight: 600; }
+.perche { grid-column: 2; color: var(--nebbia); font-size: 16px; }
+@media (max-width: 600px) { .linea-tempo li { grid-template-columns: 1fr; } .perche { grid-column: 1; } }
+
+/* Persone */
+.filtri { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 24px; }
+.filtri button { font: 500 15px var(--label); letter-spacing: .06em; background: transparent; color: var(--nebbia); border: 1px solid var(--linea); padding: 7px 14px; cursor: pointer; }
+.filtri button[aria-pressed="true"] { color: var(--pergamena); border-color: var(--pergamena); }
+.filtri button span { color: var(--nebbia); margin-left: 4px; font-variant-numeric: tabular-nums; }
+.filtri input { margin-left: auto; min-width: 200px; flex: 0 1 260px; background: var(--pietra); color: var(--pergamena); border: 1px solid var(--linea); padding: 8px 12px; font: 16px var(--body); }
+@media (max-width: 600px) { .filtri input { margin-left: 0; flex: 1 1 100%; } }
+.persone { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.persona { background: var(--pietra); border: 1px solid var(--linea); border-left: 3px solid var(--c, var(--nebbia)); padding: 16px 18px; display: grid; gap: 6px; align-content: start; }
+.persona h3 { font: 600 19px/1.3 var(--body); margin: 0; }
+.persona .chi { color: var(--nebbia); font-size: 15px; font-style: italic; margin: 0; }
+.persona p { margin: 0; font-size: 16px; }
+.pill { justify-self: start; font: 500 13px var(--label); letter-spacing: .1em; color: var(--c); border: 1px solid var(--c); padding: 1px 8px; }
+.Alleato { --c: var(--ok); } .Neutrale { --c: var(--nebbia); } .Ambiguo { --c: var(--ambra); } .Ostile { --c: var(--sangue); }
+.vuoto { color: var(--nebbia); }
+
+/* Ultima sessione */
+.ultima { display: grid; gap: 28px; max-width: 70ch; }
+.ultima ul { margin: 10px 0 0; padding-left: 20px; }
+.ultima li { margin: 4px 0; }
+.ultima .offerta { border: 1px solid var(--sangue); padding: 20px 24px; background: rgba(179,58,49,.07); }
+
+/* Cosa fare */
+.gruppi { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+.gruppo h3 { font-size: 24px; }
+.gruppo h3 small { font: italic 16px var(--body); color: var(--nebbia); margin-left: 6px; }
+.gruppo ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 12px; }
+.gruppo li { padding-left: 22px; position: relative; font-size: 16px; }
+.gruppo li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 8px; height: 8px; border: 1px solid var(--sangue); transform: rotate(45deg); }
+
+footer { padding: 32px 0 48px; color: var(--nebbia); font-size: 15px; }
+.errore { padding: 48px 0; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="mist" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div>
+      <p class="eyebrow">Diario della compagnia · Barovia</p>
+      <h1>La Maledizione<br>di <span>Strahd</span></h1>
+      <p class="meta" id="meta">Caricamento del diario…</p>
+    </div>
+    <aside class="patto" id="patto" aria-label="Scadenza dell'offerta di Strahd"></aside>
+  </div>
+</header>
+<nav aria-label="Sezioni">
+  <ol>
+    <li><a href="#storia"><b>I</b>La storia finora</a></li>
+    <li><a href="#momenti"><b>II</b>Momenti chiave</a></li>
+    <li><a href="#persone"><b>III</b>Persone</a></li>
+    <li><a href="#ultima"><b>IV</b>Dove eravamo rimasti</a></li>
+    <li><a href="#da-fare"><b>V</b>Cosa fare ora</a></li>
+  </ol>
+</nav>
+<main id="main">
+  <section id="storia"><div class="wrap">
+    <h2><small>Capitolo I</small>La storia finora</h2>
+    <p class="lead">Dalle Nebbie di Neverwinter fino alla vigilia dell'Isola Fantasma.</p>
+    <div class="capitoli" id="storia-testo"></div>
+  </div></section>
+  <section id="momenti"><div class="wrap">
+    <h2><small>Capitolo II</small>Momenti chiave</h2>
+    <p class="lead">In ordine di tempo; in rosso quelli dell'ultima sessione.</p>
+    <ol class="linea-tempo" id="momenti-lista"></ol>
+  </div></section>
+  <section id="persone"><div class="wrap">
+    <h2><small>Capitolo III</small>Persone</h2>
+    <p class="lead">Chi abbiamo incontrato e come si pone verso il gruppo.</p>
+    <div class="filtri" id="filtri" role="group" aria-label="Filtra per allineamento"></div>
+    <div class="persone" id="persone-lista" aria-live="polite"></div>
+  </div></section>
+  <section id="ultima"><div class="wrap">
+    <h2><small id="ultima-data">Capitolo IV</small>Dove eravamo rimasti</h2>
+    <p class="lead" id="ultima-intro"></p>
+    <div class="ultima" id="ultima-testo"></div>
+  </div></section>
+  <section id="da-fare"><div class="wrap">
+    <h2><small>Capitolo V</small>Cosa fare ora</h2>
+    <p class="lead">Missioni aperte, decisioni da prendere e cose da non dimenticare.</p>
+    <div class="gruppi" id="da-fare-lista"></div>
+  </div></section>
+</main>
+<footer><div class="wrap">Tratto dalle registrazioni delle sessioni e dai messaggi del gruppo. Nomi e cifre con "probabile" o "incerto" vanno confermati al tavolo.</div></footer>
+
+<script>
+(function () {
+  var ROMANI = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII"];
+  var ORDINE = ["Alleato","Neutrale","Ambiguo","Ostile"];
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); }
+  function md(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
+  function $(id) { return document.getElementById(id); }
+
+  function render(d) {
+    $("meta").textContent = "Aggiornato il " + d.aggiornato + " · ultima sessione: " + d.ultimaSessione;
+    $("patto").innerHTML = '<div class="n">' + esc(d.scadenza.giorni) + '</div><p>' + esc(d.scadenza.testo) + ' (dal ' + esc(d.scadenza.dal) + ').</p><a href="#ultima">Leggi l\'offerta</a>';
+
+    $("storia-testo").innerHTML = d.storia.map(function (c, i) {
+      return '<article class="capitolo"><h3><i>' + ROMANI[i] + '</i>' + esc(c.titolo) + '</h3><p>' + md(c.testo) + '</p></article>';
+    }).join("");
+
+    var ultimoQuando = d.momenti[d.momenti.length - 1][0];
+    $("momenti-lista").innerHTML = d.momenti.map(function (m) {
+      return '<li class="' + (m[0] === ultimoQuando ? "recente" : "") + '"><span class="quando">' + esc(m[0]) + '</span><span class="momento">' + esc(m[1]) + '</span><span class="perche">' + esc(m[2]) + '</span></li>';
+    }).join("");
+
+    var filtro = "Tutti", cerca = "";
+    var conta = { Tutti: d.persone.length };
+    d.persone.forEach(function (p) { conta[p[2]] = (conta[p[2]] || 0) + 1; });
+    $("filtri").innerHTML = ["Tutti"].concat(ORDINE).map(function (k) {
+      return '<button type="button" id="f-' + k + '" data-k="' + k + '" aria-pressed="' + (k === "Tutti") + '">' + k + '<span>' + (conta[k] || 0) + '</span></button>';
+    }).join("") + '<input id="cerca" type="search" placeholder="Cerca un nome" aria-label="Cerca una persona">';
+    function disegnaPersone() {
+      var q = cerca.toLowerCase();
+      var lista = d.persone.filter(function (p) {
+        return (filtro === "Tutti" || p[2] === filtro) && (!q || (p[0] + " " + p[1] + " " + p[3]).toLowerCase().indexOf(q) > -1);
+      });
+      $("persone-lista").innerHTML = lista.length ? lista.map(function (p) {
+        return '<article class="persona ' + esc(p[2]) + '"><span class="pill">' + esc(p[2]) + '</span><h3>' + esc(p[0]) + '</h3><p class="chi">' + esc(p[1]) + '</p><p>' + md(p[3]) + '</p></article>';
+      }).join("") : '<p class="vuoto">Nessuna persona trovata.</p>';
+    }
+    $("filtri").addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b) return;
+      filtro = b.getAttribute("data-k");
+      Array.prototype.forEach.call($("filtri").querySelectorAll("button"), function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      disegnaPersone();
+    });
+    $("cerca").addEventListener("input", function (e) { cerca = e.target.value; disegnaPersone(); });
+    disegnaPersone();
+
+    $("ultima-data").textContent = "Capitolo IV · sessione del " + d.ultimaSessione;
+    $("ultima-intro").textContent = d.ultima.intro;
+    $("ultima-testo").innerHTML = d.ultima.capitoli.map(function (c, i) {
+      var cls = /^Strahd/.test(c.titolo) ? "capitolo offerta" : "capitolo";
+      var lista = c.lista ? '<ul>' + c.lista.map(function (x) { return '<li>' + md(x) + '</li>'; }).join("") + '</ul>' : "";
+      return '<article class="' + cls + '"><h3><i>' + ROMANI[i] + '</i>' + esc(c.titolo) + '</h3><p>' + md(c.testo) + '</p>' + lista + '</article>';
+    }).join("");
+
+    $("da-fare-lista").innerHTML = d.cosaFare.map(function (g) {
+      return '<div class="gruppo"><h3>' + esc(g.titolo) + (g.nota ? '<small>' + esc(g.nota) + '</small>' : "") + '</h3><ul>' + g.voci.map(function (v) { return '<li>' + md(v) + '</li>'; }).join("") + '</ul></div>';
+    }).join("");
+  }
+
+  // Highlight the chapter in view
+  var links = document.querySelectorAll("nav a");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) links.forEach(function (a) { a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id); });
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll("main section").forEach(function (s) { io.observe(s); });
+  }
+
+  fetch("data.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(function () {
+      $("meta").textContent = "Non riesco a caricare il diario. Ricarica la pagina tra qualche secondo.";
+    });
+})();
+</script>
+</body>
+</html>

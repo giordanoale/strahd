@@ -1,0 +1,379 @@
+{
+ "aggiornato": "21 novembre 2026",
+ "ultimaSessione": "20 novembre 2026",
+ "scadenza": {
+  "giorni": 28,
+  "testo": "giorni di gioco per rispondere all'offerta di Strahd",
+  "dal": "20/11"
+ },
+ "storia": [
+  {
+   "titolo": "Il prologo",
+   "testo": "A Neverwinter il gruppo ha aiutato il Magister Valerian, vero nome Varek Zhui, a bandire un demone mandato dagli assassini di Szass Tam. Subito dopo le Nebbie di Barovia hanno inghiottito tutti, e del Magister si sono perse le tracce. Madame Eva, matrona dei Vistani, ha portato il gruppo nel Crocevia: secondo lei il destino dei personaggi è legato a Barovia."
+  },
+  {
+   "titolo": "Il villaggio di Barovia",
+   "testo": "Il gruppo ha conosciuto Ireena e Ismark e ha ucciso Doru, il figlio di Padre Donavich diventato progenie vampirica. Così la chiesa ha riaperto. Ha anche scacciato la Strega Agatha, che rapiva bambini, e la maledizione dei Pasticcini dei Sogni sta svanendo. Merrits ha lasciato nella chiesa un enorme teschio di drago d'argento."
+  },
+  {
+   "titolo": "Il castello di Strahd",
+   "testo": "Il gruppo è stato ospite del Conte. Ha liberato Emil Toranescu, legato ai Mannari, e lo spirito della banshee Patrina Velikovna. Ha parlato con lo spirito di San Markovia e ne ha ottenuto il femore, diventato un'arma. Vaelen ha trovato un teschio maledetto che assorbe le anime. Strahd chiedeva di consegnargli Ireena. Dopo un'alleanza con una sottoposta di Van Richten, il gruppo ha deciso di opporsi a lui."
+  },
+  {
+   "titolo": "L'arrivo a Vallaki",
+   "testo": "Il gruppo ha scoperto come governa il barone Vargas Vallakovich: feste obbligatorie, prigione o forca per chi lo critica, Vistani uccisi. Al fabbro si è lasciato sfuggire che le armi da vendere venivano dal castello del Conte. Il fabbro ha chiamato le guardie e il gruppo è stato arrestato e poi liberato."
+  },
+  {
+   "titolo": "In città",
+   "testo": "Il gruppo ha fatto amicizia con Padre Lucian, a cui sono state rubate le ossa di Sant'Andral, e si è offerto di cercarle. Alla Torre Arcana ha commerciato con Xaroth e ha accettato la missione del Magister Victor: scortarlo sull'Isola Fantasma al centro del lago Zarovich. Al Bacio della Strega ha conosciuto Nikolay e Surath, e Hanzo si è battuto con Boris. Dalla bacheca il gruppo ha raccolto altre missioni da mercenario."
+  }
+ ],
+ "momenti": [
+  [
+   "Prologo",
+   "Le Nebbie inghiottono il gruppo a Neverwinter",
+   "Inizio della campagna; Varek Zhui scompare"
+  ],
+  [
+   "Prologo",
+   "Madame Eva porta il gruppo nel Crocevia",
+   "Il destino del gruppo è legato a Barovia"
+  ],
+  [
+   "Villaggio di Barovia",
+   "Doru ucciso, chiesa riaperta",
+   "Padre Donavich trova pace"
+  ],
+  [
+   "Villaggio di Barovia",
+   "Strega Agatha scacciata",
+   "Fine dei Pasticcini dei Sogni e dei rapimenti"
+  ],
+  [
+   "Castello",
+   "Emil Toranescu liberato",
+   "Il suo nome può evitare un attacco dei Mannari"
+  ],
+  [
+   "Castello",
+   "Femore di San Markovia",
+   "Arma con potere finché il gruppo si oppone a Strahd"
+  ],
+  [
+   "Castello",
+   "Teschio maledetto di Vaelen",
+   "Assorbe anime; legame che non si spezza"
+  ],
+  [
+   "Castello",
+   "Patrina Velikovna liberata",
+   "Ha promesso di cercare il gruppo a Vallaki"
+  ],
+  [
+   "Dopo il castello",
+   "Alleanza con una sottoposta di Van Richten",
+   "Il gruppo sceglie di opporsi a Strahd e proteggere Ireena"
+  ],
+  [
+   "7/11",
+   "Il fabbro scopre che le armi vengono dal castello",
+   "Arresto a Vallaki"
+  ],
+  [
+   "Prima del 20/11",
+   "Missioni accettate a Vallaki",
+   "Ossa di Sant'Andral, Isola Fantasma, Surath, bacheca"
+  ],
+  [
+   "20/11",
+   "Sotto l'Isola Fantasma, un tempio netherese",
+   "Cerchi di teletrasporto attivi per Vallaki e Barovia"
+  ],
+  [
+   "20/11",
+   "Diario e frammento d'ambra",
+   "Visione di un tempio nella neve e di una fortezza abbandonata"
+  ],
+  [
+   "20/11",
+   "Strahd rivela che Victor è figlio del barone",
+   "Victor non ricorda nulla"
+  ],
+  [
+   "20/11",
+   "Strahd regala la testa del fabbro",
+   "Mostra che il Conte osserva il gruppo"
+  ],
+  [
+   "20/11",
+   "L'offerta di Strahd: tre teste in cambio dell'uscita da Barovia",
+   "Scadenza 28 giorni; il gruppo è diviso"
+  ],
+  [
+   "20/11",
+   "Merrit rivela il suo vero nome, Feuni Floris",
+   "Kian è il suo tutore"
+  ]
+ ],
+ "persone": [
+  [
+   "Ireena Kolyana",
+   "Figlia adottiva del Borgomastro di Barovia",
+   "Alleato",
+   "Viaggia con il gruppo; Strahd la vuole e il gruppo ha scelto di proteggerla. Vuole uccidere Strahd per vendicare il padre"
+  ],
+  [
+   "Ismark Indirovich",
+   "Fratello di Ireena, futuro Borgomastro",
+   "Alleato",
+   "Alloggiava con il gruppo alla locanda di Vallaki"
+  ],
+  [
+   "Magister Valerian (Varek Zhui)",
+   "Mago in fuga dagli assassini di Szass Tam",
+   "Alleato",
+   "Aiutato a Neverwinter; scomparso nelle Nebbie"
+  ],
+  [
+   "Padre Donavich",
+   "Sacerdote del villaggio di Barovia",
+   "Alleato",
+   "Il gruppo ha liberato suo figlio Doru dal vampirismo"
+  ],
+  [
+   "Emil Toranescu",
+   "Prigioniero del castello, legato ai Mannari",
+   "Alleato",
+   "Liberato; il suo nome può evitare un attacco dei Mannari"
+  ],
+  [
+   "San Markovia",
+   "Spirito della Santa",
+   "Alleato",
+   "Ha dato al gruppo il suo femore, diventato un'arma"
+  ],
+  [
+   "Sottoposta di Van Richten",
+   "Nome non riportato",
+   "Alleato",
+   "Alleanza contro Strahd"
+  ],
+  [
+   "Padre Lucian Petrovich",
+   "Sacerdote della chiesa di Sant'Andral a Vallaki",
+   "Alleato",
+   "Amico; il gruppo cerca per lui le ossa del Santo in cambio di informazioni. Strahd vuole la sua testa"
+  ],
+  [
+   "Magister Victor Vallakovich",
+   "Mago della Torre Arcana, figlio del barone",
+   "Alleato",
+   "Committente dell'Isola Fantasma: ha pagato 4.500 mo e comprato una pozione suprema"
+  ],
+  [
+   "Locandiere (\"Urbim\", nome incerto)",
+   "Gestisce la locanda dove alloggia il gruppo",
+   "Alleato",
+   "Ha raccontato al gruppo com'è la vita a Vallaki"
+  ],
+  [
+   "Madame Eva",
+   "Matrona dei Vistani",
+   "Neutrale",
+   "Ha portato il gruppo nel Crocevia"
+  ],
+  [
+   "Van Richten (\"Varikter\", probabile)",
+   "Cacciatore che dà fastidio a Strahd",
+   "Neutrale",
+   "Non ancora incontrato; Strahd vuole la sua testa. Il gruppo vuole parlarci"
+  ],
+  [
+   "Nikolay",
+   "Avventore del Bacio della Strega",
+   "Neutrale",
+   "Il gruppo ci ha parlato"
+  ],
+  [
+   "Boris",
+   "Avventore del Bacio della Strega",
+   "Neutrale",
+   "Ha sconfitto Hanzo, che si è guadagnato un po' di rispetto"
+  ],
+  [
+   "Surath",
+   "Mezzorco del Bacio della Strega",
+   "Neutrale",
+   "Offre 1.500 mo e aiuto futuro se il gruppo gli toglie una maledizione"
+  ],
+  [
+   "Xaroth",
+   "Mago (Nothic) della Torre Arcana",
+   "Neutrale",
+   "Il gruppo ci ha parlato e commerciato; alcuni non si fidano"
+  ],
+  [
+   "Patrina Velikovna",
+   "Banshee liberata, ora in un nuovo corpo",
+   "Ambiguo",
+   "Conosce segreti su Strahd; cercherà il gruppo a Vallaki"
+  ],
+  [
+   "Barone Vargas Vallakovich",
+   "Borgomastro di Vallaki",
+   "Ambiguo",
+   "Il gruppo è stato arrestato e poi liberato in città. Strahd vuole la sua testa"
+  ],
+  [
+   "Volenta Popofsky",
+   "Consorte di Strahd",
+   "Ambiguo",
+   "Non ha rispettato l'ospitalità verso il gruppo; Strahd l'ha punita"
+  ],
+  [
+   "Strahd von Zarovich",
+   "Il Conte, signore di Barovia",
+   "Ostile",
+   "Ha ospitato il gruppo al castello. Il 20/11 ha offerto l'uscita da Barovia in cambio di tre teste"
+  ],
+  [
+   "Rahadin",
+   "Ciambellano e boia di Strahd",
+   "Ostile",
+   "Scheda del master"
+  ],
+  [
+   "Ludmilla, Anastrasya, Escher",
+   "Le altre consorti di Strahd",
+   "Ostile",
+   "Schede del master; secondo Strahd ora sono fuori dal castello"
+  ],
+  [
+   "Doru",
+   "Figlio di Padre Donavich, progenie vampirica",
+   "Ostile",
+   "Ucciso dal gruppo"
+  ],
+  [
+   "Strega Agatha",
+   "Strega del villaggio di Barovia",
+   "Ostile",
+   "Scacciata"
+  ],
+  [
+   "Il fabbro (Thomas, secondo l'immagine del 17/11)",
+   "Fabbro di Vallaki",
+   "Ostile",
+   "Ha chiamato le guardie contro il gruppo. Strahd ha portato la sua testa"
+  ],
+  [
+   "Capo delle guardie di Vallaki",
+   "Guardia cittadina",
+   "Ostile",
+   "Ha messo le mani addosso a Merrit"
+  ],
+  [
+   "Meredit",
+   "Ladra delle ossa di Sant'Andral",
+   "Ostile",
+   "Da trovare; probabilmente alleata di Strahd"
+  ],
+  [
+   "Guardiani dell'isola",
+   "Golem e Magen del tempio netherese",
+   "Ostile",
+   "Distrutti il 20/11"
+  ]
+ ],
+ "ultima": {
+  "intro": "Il gruppo ha scortato il Magister Victor sull'Isola Fantasma e ha trovato un tempio netherese. All'uscita ha incontrato Strahd, che gli ha fatto un'offerta. Ora il gruppo è tornato a Vallaki, stanco, e deve decidere cosa rispondere.",
+  "capitoli": [
+   {
+    "titolo": "Verso l'isola",
+    "testo": "Il gruppo ha camminato sull'acqua del lago Zarovich e ha ucciso due serpenti di lago: zanne e altre parti potrebbero servire come componenti. Un banco di nebbia copriva il centro del lago. Victor ha capito che era un'illusione creata con un rituale e il gruppo l'ha dissolta. L'isola era silenziosa e la struttura di pietra sembrava più antica di Strahd, oltre 700 anni."
+   },
+   {
+    "titolo": "Il tempio e i cerchi di teletrasporto",
+    "testo": "Nella navata Victor ha scoperto un'illusione che nascondeva una botola di metallo. Il gruppo ne ha spezzato i cardini e l'ha gettata in acqua. Sotto c'era una grotta con un mosaico: il Signore del Mattino (con un drago d'oro come campione), la Madre Notte e due dèi dimenticati intorno a un albero spoglio. Quattro obelischi portano i nomi Barovia, Vallaki, Berez e Krezk. Sotto ognuno c'è un cerchio di teletrasporto: **quelli per Vallaki e Barovia funzionano**, quelli per Berez e Krezk sono distrutti."
+   },
+   {
+    "titolo": "Il golem di cristallo",
+    "testo": "Un corridoio incantato ha teletrasportato due personaggi più avanti e il gruppo si è diviso per un po'. Nella sala successiva un grande cristallo proiettava una mappa della Barovia di prima di Strahd. Lanciare un sasso ha fatto scattare una trappola: dal cristallo è uscito un golem di 3 metri che rifletteva gli incantesimi a bersaglio singolo. Il gruppo l'ha battuto con incantesimi ad area. Dentro c'era un **cristallo della memoria**, che proietta i ricordi con la luce: Victor lo studierà e poi lo darà al gruppo."
+   },
+   {
+    "titolo": "L'oasi e i guardiani",
+    "testo": "Una sala con cielo azzurro e luce del sole permanente, un laghetto e alberi da frutto. Secondo Victor era un'abitazione protetta, dove nessun vampiro può entrare senza invito. Due golem guardiani e un Magen (un costrutto mago con fulmini e martello delle tempeste) hanno attaccato. Victor e Kian sono andati a terra, ma il gruppo li ha rialzati e ha vinto."
+   },
+   {
+    "titolo": "Lo studio dell'arcanista",
+    "testo": "Il diario, scritto in loross, racconta di esuli di Netheril, i Custodi della Sapienza Proibita, fedeli al Signore dei Segreti. Avevano trovato un potere antichissimo e malvagio e l'hanno sigillato in un tempio impossibile da raggiungere. Dopo la lettura è comparso un **frammento d'ambra spezzato**. Chi lo tocca vede un tempio coperto di neve e un altro frammento in una fortezza abbandonata ma ancora in piedi.",
+    "lista": [
+     "Due **pozioni di cura suprema** (10d4+20)",
+     "Una **pergamena di Tempesta di fulmini** (5° livello)",
+     "Tre quadri sull'impero di Netheril (\"La gloria\", \"La caduta\", \"I nostri peggiori nemici\"), da circa 100 mo l'uno",
+     "Il diario in loross"
+    ]
+   },
+   {
+    "titolo": "Strahd",
+    "testo": "Fuori, la nebbia era tornata, questa volta simile a quella mortale di Barovia. Strahd è arrivato camminando sul lago. Ha addormentato Victor chiamandolo \"figlio del barone\" e si è presentato a chi non lo conosceva ancora. Ha lasciato al gruppo una scatola con dentro la **testa del fabbro** che lo aveva denunciato. Poi ha fatto la sua offerta. Ha detto che Ireena deve essere sua \"a prescindere dai suoi sentimenti\", di aver punito Volenta per non aver rispettato l'ospitalità, e che le sue consorti ora sono fuori dal castello.",
+    "lista": [
+     "Portargli **tre teste: Van Richten (\"Varikter\"), il barone Vargas Vallakovich e Padre Lucian**",
+     "Lasciarle fuori Vallaki prima della Festa del Sole Ardente, entro il 30° giorno del calendario",
+     "In cambio, dopo la festa, Strahd porterà il gruppo fuori da Barovia",
+     "Scadenza: 28 giorni di gioco dal 20/11"
+    ]
+   },
+   {
+    "titolo": "Il ritorno",
+    "testo": "Victor al risveglio crede di essere inciampato. Il gruppo è tornato a Vallaki con un giorno di viaggio e un riposo lungo.",
+    "lista": [
+     "Victor ha pagato **4.500 mo** in tutto, per la missione, il rischio in più e il prestito della pergamena: 750 mo a testa",
+     "Victor ha comprato una pozione suprema per **900 mo** (150 mo a testa); l'altra resta al tank",
+     "La pergamena resta in prestito a Victor",
+     "La mezza armatura adattata è stata ritirata pagando 60 mo"
+    ]
+   },
+   {
+    "titolo": "Il gruppo diviso",
+    "testo": "Alcuni personaggi vogliono accettare per uscire da Barovia. Il chierico si rifiuta di uccidere innocenti come Padre Lucian. Il master consiglia di decidere fuori dal gioco il tono della campagna, se buono o cattivo, perché dividere il gruppo renderebbe le sessioni noiose. Messo alle strette, Merrit ha rivelato il suo vero nome, **Feuni Floris**, e ha presentato Kian come suo tutore. Per ora l'offerta non è accettata: prima si va a parlare con Van Richten. Dopo la sessione il gruppo è salito di livello."
+   }
+  ]
+ },
+ "cosaFare": [
+  {
+   "titolo": "Prima della prossima sessione",
+   "nota": "su WhatsApp",
+   "voci": [
+    "**Offerta di Strahd:** decidere la risposta. Scadenza: 28 giorni di gioco dal 20/11, entro il 30° giorno del calendario.",
+    "**Tono della campagna:** decidere fuori dal gioco se essere buoni o cattivi.",
+    "**Prossimo obiettivo:** sceglierlo.",
+    "**Dal master:** in arrivo il testo completo del diario e la descrizione del cristallo della memoria."
+   ]
+  },
+  {
+   "titolo": "Missioni e piste",
+   "voci": [
+    "**Van Richten:** trovarlo e parlarci, prima di decidere sull'offerta. È a Vallaki, ma nessuno sa che faccia abbia.",
+    "**Ossa di Sant'Andral:** trovare Meredit, che le ha rubate, e riportarle a Padre Lucian.",
+    "**Lupi mannari:** cacciarli nella foresta, 150 mo a testa. Nella Foresta di Svalich il nome di Emil Toranescu potrebbe evitare un loro attacco.",
+    "**Surath:** togliergli la maledizione, al Bacio della Strega. 1.500 mo e aiuto futuro.",
+    "**Spedizione mineraria:** scoprire cosa è successo all'ultima spedizione e come è stata distrutta. 1.500 mo.",
+    "**Bambina scomparsa:** trovarla, fuori Vallaki. 500 mo.",
+    "**Frammenti d'ambra:** cercare il tempio nella neve e la fortezza abbandonata.",
+    "**Patrina Velikovna:** aspettare che si faccia viva a Vallaki."
+   ]
+  },
+  {
+   "titolo": "Da ricordare",
+   "voci": [
+    "**Victor:** farsi dare il cristallo della memoria e riavere la pergamena di Tempesta di fulmini.",
+    "**Victor e Strahd:** decidere se dirgli che è stato Strahd ad addormentarlo.",
+    "**Teletrasporto:** sull'isola i cerchi per Vallaki e Barovia funzionano.",
+    "**Teschio del drago d'argento:** è ancora nella chiesa del villaggio di Barovia.",
+    "**Acquisti:** la spada fiammeggiante del negozio della Torre costa 10.000 mo; sconto del 10% da verificare.",
+    "**Quadri di Netheril:** venderli (circa 100 mo l'uno) o tenerli."
+   ]
+  }
+ ]
+}
