@@ -111,7 +111,7 @@
   ],
   [
    "20/11",
-   "Merrit rivela il suo vero nome, Feuni Floris",
+   "Merrits rivela il suo vero nome, Feuni Floris",
    "Kian è il suo tutore"
   ]
  ],
@@ -171,8 +171,8 @@
    "Committente dell'Isola Fantasma: ha pagato 4.500 mo e comprato una pozione suprema"
   ],
   [
-   "Locandiere (\"Urbim\", nome incerto)",
-   "Gestisce la locanda dove alloggia il gruppo",
+   "Urwin Martikov",
+   "Locandiere della Blue Water Inn, dove alloggia il gruppo",
    "Alleato",
    "Ha raccontato al gruppo com'è la vita a Vallaki"
   ],
@@ -183,7 +183,7 @@
    "Ha portato il gruppo nel Crocevia"
   ],
   [
-   "Van Richten (\"Varikter\", probabile)",
+   "Van Richten",
    "Cacciatore che dà fastidio a Strahd",
    "Neutrale",
    "Non ancora incontrato; Strahd vuole la sua testa. Il gruppo vuole parlarci"
@@ -261,8 +261,8 @@
    "Scacciata"
   ],
   [
-   "Il fabbro (Thomas, secondo l'immagine del 17/11)",
-   "Fabbro di Vallaki",
+   "Thomas il fabbro",
+   "Proprietario dell'Incudine Fiammeggiante a Vallaki",
    "Ostile",
    "Ha chiamato le guardie contro il gruppo. Strahd ha portato la sua testa"
   ],
@@ -270,7 +270,7 @@
    "Capo delle guardie di Vallaki",
    "Guardia cittadina",
    "Ostile",
-   "Ha messo le mani addosso a Merrit"
+   "Ha messo le mani addosso a Merrits"
   ],
   [
    "Meredit",
@@ -306,19 +306,19 @@
    },
    {
     "titolo": "Lo studio dell'arcanista",
-    "testo": "Il diario, scritto in loross, racconta di esuli di Netheril, i Custodi della Sapienza Proibita, fedeli al Signore dei Segreti. Avevano trovato un potere antichissimo e malvagio e l'hanno sigillato in un tempio impossibile da raggiungere. Dopo la lettura è comparso un **frammento d'ambra spezzato**. Chi lo tocca vede un tempio coperto di neve e un altro frammento in una fortezza abbandonata ma ancora in piedi.",
+    "testo": "Il diario, scritto in Loross, racconta di esuli di Netheril, i Custodi della Sapienza Proibita, fedeli al Signore dei Segreti. Avevano trovato un potere antichissimo e malvagio e l'hanno sigillato in un tempio impossibile da raggiungere. Dopo la lettura è comparso un **frammento d'ambra spezzato**. Chi lo tocca vede un tempio coperto di neve e un altro frammento in una fortezza abbandonata ma ancora in piedi.",
     "lista": [
      "Due **pozioni di cura suprema** (10d4+20)",
      "Una **pergamena di Tempesta di fulmini** (5° livello)",
      "Tre quadri sull'impero di Netheril (\"La gloria\", \"La caduta\", \"I nostri peggiori nemici\"), da circa 100 mo l'uno",
-     "Il diario in loross"
+     "Il diario in Loross"
     ]
    },
    {
     "titolo": "Strahd",
     "testo": "Fuori, la nebbia era tornata, questa volta simile a quella mortale di Barovia. Strahd è arrivato camminando sul lago. Ha addormentato Victor chiamandolo \"figlio del barone\" e si è presentato a chi non lo conosceva ancora. Ha lasciato al gruppo una scatola con dentro la **testa del fabbro** che lo aveva denunciato. Poi ha fatto la sua offerta. Ha detto che Ireena deve essere sua \"a prescindere dai suoi sentimenti\", di aver punito Volenta per non aver rispettato l'ospitalità, e che le sue consorti ora sono fuori dal castello.",
     "lista": [
-     "Portargli **tre teste: Van Richten (\"Varikter\"), il barone Vargas Vallakovich e Padre Lucian**",
+     "Portargli **tre teste: Van Richten, il barone Vargas Vallakovich e Padre Lucian**",
      "Lasciarle fuori Vallaki prima della Festa del Sole Ardente, entro il 30° giorno del calendario",
      "In cambio, dopo la festa, Strahd porterà il gruppo fuori da Barovia",
      "Scadenza: 28 giorni di gioco dal 20/11"
@@ -336,7 +336,7 @@
    },
    {
     "titolo": "Il gruppo diviso",
-    "testo": "Alcuni personaggi vogliono accettare per uscire da Barovia. Il chierico si rifiuta di uccidere innocenti come Padre Lucian. Il master consiglia di decidere fuori dal gioco il tono della campagna, se buono o cattivo, perché dividere il gruppo renderebbe le sessioni noiose. Messo alle strette, Merrit ha rivelato il suo vero nome, **Feuni Floris**, e ha presentato Kian come suo tutore. Per ora l'offerta non è accettata: prima si va a parlare con Van Richten. Dopo la sessione il gruppo è salito di livello."
+    "testo": "Alcuni personaggi vogliono accettare per uscire da Barovia. Il chierico si rifiuta di uccidere innocenti come Padre Lucian. Il master consiglia di decidere fuori dal gioco il tono della campagna, se buono o cattivo, perché dividere il gruppo renderebbe le sessioni noiose. Messo alle strette, Merrits ha rivelato il suo vero nome, **Feuni Floris**, e ha presentato Kian come suo tutore. Per ora l'offerta non è accettata: prima si va a parlare con Van Richten. Dopo la sessione il gruppo è salito di livello."
    }
   ]
  },
